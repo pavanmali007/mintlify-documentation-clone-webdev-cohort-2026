@@ -1,0 +1,1443 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter/static/Inter_18pt-Regular.ttf") format("ttf");
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: "Geist_mono";
+    src: url("fonts/Geist_Mono/GeistMono-VariableFont_wght.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "G_sans";
+    src: url("fonts/Google_Sans/static/GoogleSans-Regular.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------
+Riptide
+#90ECC5
+144, 236, 197
+155, 71, 75
+39, 0, 17, 7
+* ------------*/
+
+/* ------------
+Mountain Meadow
+#18E299
+24, 226, 153
+158, 81, 49
+89, 0, 32, 11 
+* ------------*/
+
+/* ------------
+Woodsmoke
+#08090B
+8, 9, 11
+220, 16, 4
+27, 18, 0, 96
+* -----------*/
+
+body {
+    /* background-color: #08090B; */
+    background-color: #fff;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150vh;
+    /* background-image: url("mintlify_assets/light_background_1.png"); */
+    background:
+        linear-gradient(rgba(50, 50, 50, 0.001), rgba(100, 100, 100, 0.001), rgba(255, 255, 255, 1)),
+        url("mintlify_assets/light_background_1.png");
+    background-size: cover;
+    /* fills div, crops if needed */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+
+
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+#navbar {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bold; */
+
+    /* font-family: Inter; */
+
+    /* position: sticky; */
+    top: 0;
+    overflow: hidden;
+    background-color: transparent;
+
+
+
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    /* padding: 15px 40px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    /* 🔥 GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.01);
+    /* transparent */
+    backdrop-filter: blur(10px);
+    /* blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+
+    z-index: 1000;
+
+
+
+
+}
+
+#nav_container {
+    width: 75.3%;
+    /* border: 1px solid black; */
+    padding: 13.5px 0;
+    /* margin-right: 5px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Inter;
+    font-size: 15px;
+
+}
+
+#logo {
+    width: 105px;
+    height: 36px;
+    margin-top: 1px;
+    /* border: 1px solid black; */
+    background-image: url("mintlify_assets/logo_img_1-removebg_mod_2.png");
+    background-size: contain;
+    /* fills div, crops if needed */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#logo:hover {
+    scale: 1.05;
+}
+
+/* #logo::after {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    font-weight: bold;
+    color: #f1f1f1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    content: "mintlify";
+    letter-spacing: -1px;
+    font-stretch: expanded;
+} */
+
+
+
+
+#wraper1 {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 68.5px;
+}
+
+#navlinks {
+    list-style: none;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    /* letter-spacing: 0.5px; */
+    font-weight: 500;
+
+}
+
+#nav_action_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.5px;
+    font-family: Inter;
+    font-size: 15px;
+
+    padding-top: 2px;
+}
+
+#navlinks>li>a {
+    text-decoration: none;
+    color: #f1f1f1;
+    mix-blend-mode: difference;
+}
+
+#navlinks>li {
+    transition: all ease 0.5s;
+}
+
+#navlinks>li:hover {
+    scale: 1.05;
+}
+
+
+
+.btn {
+    /* border: 1px solid black; */
+    border: none;
+    padding: 7px 12px;
+    /* font-weight: bold; */
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Inter;
+    font-size: 15px;
+    transition: all ease 0.5s;
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+.contact_btn {
+    color: #f1f1f1;
+    background-color: transparent;
+
+    background: rgba(255, 255, 255, 0.05);
+    /* transparent */
+    backdrop-filter: blur(15px);
+    /* blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    /* border-bottom: 1px solid rgba(255,255,255,0.2); */
+
+    cursor: pointer;
+}
+
+
+.start_btn {
+    color: rgb(45, 45, 45);
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+}
+
+.start_btn:hover {
+    background-color: rgba(241, 241, 241, 0.9);
+}
+
+#hero_section {
+    margin-top: 80px;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_pill {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 8px 4px 4px;
+    margin: 10px;
+    /* border: 1px solid black; */
+
+    background-color: rgba(8, 9, 11, 0.2);
+    border-radius: 100px;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+#hero_pill:hover {
+    background-color: rgba(8, 9, 11, 0.09);
+}
+
+#pill_tag_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 7px;
+    /* border: 1px solid black; */
+
+    border: none;
+    background-color: #0C8C5E;
+    border-radius: 100px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    font-family: Inter;
+
+}
+
+#pill_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Inter;
+}
+
+#pill_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("mintlify_assets/angle-right-solid-full.svg");
+    /* background-image: url("mintlify_assets/logo_img_1-removebg_mod_2.png"); */
+    background-size: auto;
+    /* fills div, crops if needed */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 100px;
+    padding: 7px;
+
+}
+
+#hero_content {
+    margin: 30px auto;
+    width: 600px;
+    padding: 2px;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    font-family: Inter;
+
+
+
+}
+
+
+
+
+#hero_heading {
+    /* border: 1px solid black; */
+    max-height: 150px;
+
+    display: flex;
+    justify-content: cen;
+    align-items: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+    font-size: 56px;
+
+}
+
+#hero_description {
+    /* border: 1px solid black; */
+    max-width: 450px;
+
+    display: flex;
+    justify-content: cen;
+    align-items: center;
+
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#hero_action_div {
+    border: 1px solid rgba(241, 241, 241, 0.2);
+    padding: 4px;
+
+    display: flex;
+    justify-content: cen;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 255, 0.5);
+
+    color: #f1f1f1;
+    background-color: transparent;
+
+    background: rgba(255, 255, 255, 0.1);
+    /* transparent */
+    backdrop-filter: blur(15px);
+    /* blur */
+    -webkit-backdrop-filter: blur(10px);
+
+
+
+}
+
+#hero_input {
+    width: 250px;
+    color: #f1f1f1;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    outline: none;
+    border: none;
+
+    border-radius: 100px;
+    padding: 7px 10px;
+
+}
+
+#hero_input::placeholder {
+    color: rgba(241, 241, 241, 0.6);
+    font-size: 15px;
+}
+
+#hero_action_btn {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 100px;
+
+    font-family: Inter;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+
+#hero_action_btn:hover {
+    scale: 1.03;
+}
+
+#hero_img {
+    width: 76.5%;
+    height: 100vh;
+    margin-top: 70px;
+
+    background-image: url("mintlify_assets/hero-image-light.svg");
+    /* path of image */
+    background-size: contain;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+
+    border: 2.5px solid rgba(36, 40, 49, 0.05);
+    border-bottom: none;
+    border-radius: 25px;
+}
+
+#brands {
+    width: 100%;
+    margin-top: 300px;
+    user-select: none;
+    margin-bottom: 150px;
+}
+
+#built_for_the_intelligence_age {
+    width: 100%;
+    margin: 50px 0;
+    /* border: 1px solid black; */
+
+    font-family: Inter;
+    color: #08090B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intelligence_heading {
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+
+
+}
+
+#intelligence_text {
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Inter;
+
+}
+
+#intelligence_functining_area {
+    width: 100%;
+    /* margin: 50px 0; */
+    /* padding: 10px 0; */
+    /* border: 1px solid rgb(92, 92, 92); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#intelligence_functining_area_upper {
+    width: 70%;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub_func_area {
+    width: 450px;
+    border: 1px solid rgba(12, 140, 94, 0.1);
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    margin: 60px 0;
+}
+
+.sub_func_area>img {
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+}
+
+#intelligence_functining_area_lower {
+    width: 70%;
+    border: 1px solid rgba(12, 140, 94, 0.1);
+    border-radius: 50px;
+    padding-top: 25px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+
+
+
+
+
+}
+
+#lower_func_area_title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #0C8C5E;
+    font-family: Arial 'Gill Sans', 'Gill Sands MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px 0;
+}
+
+#lower_func_area_heading {
+    /* border: 1px solid black; */
+    font-size: 24px;
+    font-weight: 400;
+
+
+}
+
+#lower_func_area_text {
+    /* border: 1px solid black; */
+    max-width: 500px;
+    margin: 20px 0;
+    line-height: 1.5;
+
+
+}
+
+#lower_func_stream {
+    width: 750px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 25px;
+    align-self: flex-end;
+
+
+
+}
+
+#gray_area {
+    width: 100%;
+    background-color: #F8F8F8;
+    color: #08090B;
+    padding: 80px 0 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#enterprise_reinvention_section_upper {
+    width: 76.5%;
+    /* border: 1px solid black; */
+    padding: 0 20px;
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#enterprise_upper_left {
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+
+
+#enterprise_upper_title {
+    font-size: 16px;
+    color: #0C8C5E;
+    font-family: Arial 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#enterprise_upper_heading {
+    font-size: 40px;
+    font-family: Inter;
+    max-width: 440px;
+    /* border: 1px solid black; */
+}
+
+#enterprise_upper_text {
+    font-size: 16px;
+    font-family: Inter;
+    /* border: 1px solid black; */
+}
+
+#enterprise_upper_right {
+    border: none;
+
+    padding: 10px 25px;
+    background-color: #08090B;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+    /* font-weight: bold; */
+    font-family: Inter;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    cursor: pointer;
+}
+
+#enterprise_upper_right:hover {
+    background-color: rgba(8, 9, 11, 0.75);
+}
+
+#enterprise_reinvention_section_lower {
+    width: 76.5%;
+    /* border: 1px solid black; */
+    padding: 0 20px;
+    margin: 25px 0;
+    font-family: Inter;
+
+    display: flex;
+
+
+}
+
+.enterprise_lower_title {
+    /* border: 1px solid black; */
+    margin: 20px 0;
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.enterprise_lower_text {
+    /* border: 1px solid black; */
+    margin: 10px 0;
+}
+
+#gray_section_img {
+    width: 74%;
+    border-radius: 25px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#gray_section_img:hover {
+    filter: brightness(90%);
+}
+
+#brands_list2 {
+    width: 65%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+.brands_sec {
+    /* border: 1px solid black; */
+    padding: 2px;
+    max-width: 200px;
+}
+
+.list_2_brands {
+    width: 150px;
+    /* border: 1px solid black; */
+    background-size: contain;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+}
+
+#customers_section {
+    width: 100%;
+    border: 1px soli black;
+    color: #08090B;
+    margin: 120px 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#customer_text_section {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    margin: 15px 0;
+
+}
+
+#customer_title {
+    padding: 2px;
+    /* border: 1px solid black; */
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#customer_heading {
+    padding: 2px;
+    /* border: 1px solid black; */
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#customer_text {
+    max-width: 600px;
+    text-align: center;
+    padding: 2px;
+    /* border: 1px solid black; */
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+#customer_cards_section {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 2px 20px;
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    /* overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; */
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /* hide scrollbar */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE & Edge */
+
+
+
+}
+
+#customer_cards_section::-webkit-scrollbar {
+    display: none;
+}
+
+#customer_card_component {
+
+    /* border: 1px solid black; */
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+
+}
+
+#customer_card1 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/perplexity_bg.webp");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card2 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/x_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#x_logo_img {
+    width: 70px;
+}
+
+#customer_card3 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/vercel_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card4 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/laravel_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card5 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/replit_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card6 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/vercel_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card7 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/fidelity_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card8 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/anaconda_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer_card9 {
+    width: 390px;
+    height: 300px;
+    background-image: url("mintlify_assets/card_img/loops_bg.jpg");
+    /* path of image */
+    background-size: cover;
+    /* makes image cover the div */
+    background-position: top;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_img {
+    width: 200px;
+}
+
+.customer_card_text {
+    max-width: 400px;
+    /* color: rgba(8, 9, 11, 0.75); */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
+}
+
+.customer_follow_up_text {
+    color: #0C8C5E;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#winning_advantage {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 2px;
+    margin: 20px 0;
+    color: #08090B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper_winning {
+    /* border: 1px solid black; */
+    padding: 2px;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#upper_winning_heading {
+    /* border: 1px solid black; */
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 490px;
+    max-height: 300px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#upper_winning_text {
+    /* border: 1px solid black; */
+    padding: 2px;
+    margin: 20px;
+    font-size: 16px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#upper_winning_actions {
+    /* border: 1px solid black; */
+    padding: 2px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.upper_winning_btn {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+#upper_winning_btn1 {
+    color: #f1f1f1;
+    background-color: #08090B;
+}
+
+#upper_winning_btn2 {
+    color: #08090B;
+    background-color: #fff;
+    border: 1.5px solid #e3e3e3;
+}
+
+#upper_winning_btn1:hover {
+    background-color: rgba(8, 9, 11, 0.87);
+}
+
+#upper_winning_btn2:hover {
+    background-color: rgba(191, 191, 191, 0.3);
+}
+
+#lower_winning {
+    padding: 2px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lower_winning_sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 30px 90px;
+    margin: 30px 0;
+    /* border: 1px solid black; */
+}
+
+#border1 {
+    border-left: 1.2px solid rgba(12, 140, 94, 0.1);
+}
+
+.lower_winning_logo {
+    padding: 2px;
+    /* border: 1px solid black; */
+    margin: 20px 0;
+
+
+
+
+}
+
+#winning_logo_1 {
+    width: 30px;
+    height: 30px;
+    background-image: url("mintlify_assets/lower_winning_icon1.png");
+    /* path of image */
+    background-size: contain;
+    /* makes image cover the div */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+}
+
+#winning_logo_2 {
+    width: 30px;
+    height: 30px;
+    background-image: url("mintlify_assets/lower_winning_icon2.png");
+    /* path of image */
+    background-size: contain;
+    /* makes image cover the div */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+}
+
+.lower_winning_heading {
+
+
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.lower_winning_text {
+    font-size: 16px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.lower_winning_follow_up {
+    font-size: 15px;
+    color: #0C8C5E;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+}
+
+#outliner {
+    border-top: 1px solid rgba(12, 140, 94, 0.1);
+    margin-top: 70px;
+    color: #08090B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#inliner {
+    border: 1px solid rgba(12, 140, 94, 0.1);
+    width: 70%;
+
+}
+
+#part1 {
+    border-bottom: 1px solid rgba(12, 140, 94, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#single_logo_section {
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    width: 105px;
+    height: 36px;
+    margin-top: 1px;
+    /* border: 1px solid black; */
+    background-image: url("mintlify_assets/mitlify_logo_black_text.png");
+    background-size: contain;
+    /* fills div, crops if needed */
+    background-position: bottom;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+
+
+}
+
+#logo:hover {
+    scale: 1.05;
+}
+
+#multi_logo_section {
+    /* border: 1px solid black; */
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#footer_icon1 {
+    width: 25px;
+    background-image: url("mintlify_assets/footer_icon1.png");
+
+}
+
+#footer_icon2 {
+    width: 20px;
+    background-image: url("mintlify_assets/footer_icon2.png");
+}
+
+#footer_icon3 {
+
+    width: 20px;
+
+    background-image: url("mintlify_assets/footer_icon_3.png");
+
+}
+
+#footer_icon1:hover {
+    opacity: 0.87;
+
+}
+
+#footer_icon2:hover {
+    opacity: 0.87;
+}
+
+#footer_icon3:hover {
+    opacity: 0.87;
+}
+
+.footer_icons {
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    height: 36px;
+    margin-top: 1px;
+    /* border: 1px solid black; */
+    background-size: contain;
+    /* fills div, crops if needed */
+    background-position: bottom;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    opacity: 0.5;
+}
+
+#part2 {
+    border-bottom: 1px solid rgba(12, 140, 94, 0.1);
+    padding: 50px 30px 70px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.lists {
+    padding: 2px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 15px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+
+}
+
+.prime {
+    font-size: 14px;
+    opacity: 0.7;
+
+}
+
+#part3 {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+#security_text {
+    /* border: 1px solid black; */
+    padding: 15px;
+    font-size: 16px;
+}
+
+#security_simbol {
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    width: 81px;
+    height: 81px;
+    margin-top: 1px;
+    /* border: 1px solid black; */
+    background-image: url("mintlify_assets/footer_simbol.png");
+    background-size: cover;
+    /* fills div, crops if needed */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    border-radius: 100px;
+
+}
+
+#part4 {
+    border-top: 1px solid rgba(12, 140, 94, 0.1);
+    padding: 30px 30px 100px 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_pills {
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    border-radius: 25px;
+
+}
+
+#pill1 {
+    font-weight: bold;
+    background-color: rgba(164, 164, 164, 0.1);
+}
+
+#pill2 {
+    opacity: 0.7;
+}
+
+#pill3 {
+    /* border: 1px solid black; */
+    /* padding: 50px; */
+    width: 81px;
+    height: 33px;
+    margin-top: 1px;
+    /* border: 1px solid black; */
+    background-image: url("mintlify_assets/dark_light_img2.png");
+    background-size: contain;
+    /* fills div, crops if needed */
+    background-position: center;
+    /* keeps image centered */
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    /* filter: invert(100%); */
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    border-radius: 300px;
+}
