@@ -52,6 +52,10 @@ The goal of this assignment was to recreate the **structure, layout, and visual 
 ## 📸 Screenshots
 
 ![Final Output](screenshorts/ss1.png)
+![ss2 Output](screenshorts/ss2.png)
+![ss3 Output](screenshorts/ss3.png)
+![ss4 Output](screenshorts/ss4.png)
+![ss5 Output](screenshorts/ss5.png)
 
 ---
 
