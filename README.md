@@ -56,6 +56,7 @@ The goal of this assignment was to recreate the **structure, layout, and visual 
 ![ss3 Output](screenshorts/ss3.png)
 ![ss4 Output](screenshorts/ss4.png)
 ![ss5 Output](screenshorts/ss5.png)
+![ss6 Output](screenshorts/ss6.png)
 
 ---
 
